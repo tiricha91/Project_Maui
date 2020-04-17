@@ -252,7 +252,7 @@ _**Other Discussions**_
 > |  Actually 1       |      FN          |     TP       |
 
 * **Accuracy = (TP+TN)/(TP+TN+FP+FN)** 
-    * It is biased in this case as it treats FP and FN equally and out data if highly imbalanced with more weights on true negatives (TN) for loans of low risks. 
+    * It treats FP and FN equally and would be biased for imbalanced data, e.g. those with more weights on true negatives (TN)s for COVID-19 tests. 
     * Therefore, other test statistics need to be considered
 
 * **Precision = TP/(TP+FP)**
