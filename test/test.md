@@ -1,6 +1,8 @@
 
 ## Models of Good Fit
-_**Based on 31 days of data: 3/15/2020 to 4/15/2020**_
+
+_**Based on 31 days of data for Disney (DIS): 3/15/2020 to 4/15/2020**_
+
 _Note: Changes on test statistics based on live data may lead to different choice of models._
 
 _**a. Logit Regression**_
