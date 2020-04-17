@@ -81,7 +81,7 @@ _**c. Decision Tree Resampling**_
 Evaluation
 </summary>
 
-![Decision Tree Evaluation](Images/dis_dicision_tree_evaluation.png)
+![Decision Tree Evaluation](Images/dis_decision_tree_evaluation.png)
 
 </details>
 
