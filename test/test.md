@@ -6,8 +6,14 @@ _Note: Changes on test statistics based on live data may lead to different choic
 _**a. Logit Regression**_
 * The `balanced accuracy score` is 0.83.
 
+<details><summary>
+Evaluation (click me)
+</summary>
+
 ![Logit Evaluation](Images/dis_logit_evaluation.png)
 ![Logit Evaluation on Training vs. Testing Data](Images/dis_logit_eval_train_test.png)
+
+</details>
 
 <details><summary>
 Code (click me)
@@ -187,11 +193,15 @@ _**Conclusion:** Predictions are more consistent with actual directions of price
 **Deep Learning LSTM Model**
 
 _**Positive News Sentiments**_
+
 ![LSTM Prediction on Positive Sentiments](Images/DIS_positive_lstm.png)
+
 ![LSTM Training Loss on Positive Sentiments](Images/DIS_loss_positive_sentiments_lstm.png)
 
 _**Negative News Sentiments**_
+
 ![LSTM Prediction on Negative Sentiments](Images/DIS_lstm_negative.png)
+
 ![LSTM Training Loss on Negative Sentiments](Images/DIS_loss_negative_lstm.png)
 
 _Note: Potentially overfitting. Needed more data._
@@ -203,7 +213,7 @@ _**OLS Predicted Returns on News Sentiments in the Past 5 Days**_
 ![OLS Predicted Actual vs. Lagged Returns on Sentiment Catogories ](Images/actual_vs_outofsample_OLS_news_5d_DIS_1d_return_5dnews.png)
 _Note: Inverted due to complications when multiplying positive and negative signs._
 
-### _**Snoozed Sentiments?**_
+### _**Snoozed Sentiments? For How Long?**_
 _Impact on Lagged Response to News Sentiments_
 
 ##### **OLS with Rolling One-day Training Window**
@@ -231,7 +241,7 @@ _**Other Discussions**_
 ![SVM Prediction](Images/actual_vs_outofsample_SVM_DIS_1d.png)
 
 
-#### Test Statistics
+#### _Interpretation on Test Statistics_
 
 > _**Confusion Matrix**_
 > |                   | Predicted 0 (-1) | Predicted 1  |
@@ -264,9 +274,23 @@ _**Other Discussions**_
 
 
 # References
+
+* CU Gitlab Repository
 * https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/
 * https://stackoverflow.com/questions/46040656/binary-keras-lstm-model-does-not-output-binary-predictions
 * https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.get_dummies.html
 * https://medium.com/@deallen7/managing-date-datetime-and-timestamp-in-python-pandas-cc9d285302ab
 * https://stackoverflow.com/questions/38067704/how-to-change-the-datetime-format-in-pandas
 * https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Timestamp.html
+* "Stock Market Prediction" by The Python Quants from ML Elective for CQF
+* https://imbalanced-learn.readthedocs.io
+* https://scikit-learn.org/stable/
+* https://towardsdatascience.com/adaboost-for-dummies-breaking-down-the-math-and-its-equations-into-simple-terms-87f439757dcf
+* https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.get_dummies.html
+* https://www.geeksforgeeks.org/python-pandas-series/
+* https://machinelearningmastery.com/random-oversampling-and-undersampling-for-imbalanced-classification/
+* https://machinelearningmastery.com/combine-oversampling-and-undersampling-for-imbalanced-classification/
+* https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/
+* https://towardsdatascience.com/decision-trees-and-random-forests-df0c3123f991
+* https://docs.scipy.org/doc/numpy/reference/generated/numpy.ravel.html#numpy.ravel
+* https://www.scikit-yb.org/en/latest/api/classifier/classification_report.html
