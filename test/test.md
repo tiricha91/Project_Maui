@@ -256,22 +256,22 @@ _**Other Discussions**_
     * Therefore, other test statistics need to be considered
 
 * **Precision = TP/(TP+FP)**
-    * Out of all the "high-risk" predictions for loan statuses, how many are actually at "high risk".
-    * It focuses on the "high-risk" data that there are significantly less observations and uses figuress in the second column of the confusion matrix.
+    * Out of all the predictions of "1" for daily price increase, how many are actually increased.
+    * It focuses on the data on price increase and uses figuress in the second column of the confusion matrix.
 
 * **Recall = TP/(TP+FN)**
-    * How many actual "high-risk" loans are predicted correctly?
-    * It features the second row of the confusion matrix that is consisted of the light-weighted data for high-risk loans
+    * How many actual daily price increase moves are predicted correctly?
+    * It features the second row of the confusion matrix 
     * Recall is also the _**sensitivity**_ of the testing model
 
 * **Specificity = TN/(TN+FP)**
-    * How many of the actuall low-risk loan statuses are predicted correctly?
-    * It spotlight the first row of our confusion matrix and examine only the more weighted negative observations in our data.
+    * How many of the actuall downward price moves are predicted correctly?
+    * It spotlight the first row of our confusion matrix and examine only the downward price moves in our data.
 
 * **F1 = 2 x (Precision x Recall)/(Precision + Recall)**
     * F1 score is the harmonic mean of precision and recall.
     * As precission and recall usually go in opposite directions, f1 score is a good balance between the two.
-    * F1 leverages the second row and column for actual and predicted "high risk" loan statuses.
+    * F1 leverages the second row and column for actual and predicted upward price moves.
 
 
 
