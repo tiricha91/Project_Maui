@@ -253,7 +253,8 @@ _**Other Discussions**_
 
 * **Accuracy = (TP+TN)/(TP+TN+FP+FN)** 
     * It treats FP and FN equally and would be biased for imbalanced data:
-        * e.g. those with more weights on true negatives (TN)s for COVID-19 tests. False negatives need more attention.
+        * More weights are put on true negatives (TN)s for COVID-19 tests
+        * Tests need to focus on minimizing false negatives (FN)
     * Therefore, other test statistics need to be considered
 
 * **Precision = TP/(TP+FP)**
