@@ -7,4 +7,4 @@ NOTE: You must have active keys from the following APIs to run this program:
 * News API: https://newsapi.org/
 
 File to run:
-master_function
+project_code > master_function
