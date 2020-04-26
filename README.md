@@ -369,6 +369,12 @@ X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size = 
 #### Model Evaluation
 
 * Confusion Matrix and Balanced Accuracy Scores for Logit, Supervised Resampling and Ensemble Learning
+* Model evaluation would differ by company and time window.
+* Interpretion on accuracy scores
+    * The Logit model is offering a balanced accuracy score of predictions for the test dataset, which is 30% of 20, or 6 predictions. 
+        * The reason we usually get 50% as the balanced accuracy score is because with so little data (and having been trained on so little data - 14 days), it's basically randomly guessing and getting it right 50% of the time. 
+        * Now, sometimes we're a value of .25 (25%) or .625 (62.5%), and you're probably thinking to yourself, 6 can't be divided by another whole number to return that fraction/percentage. True - but we're not using a straight accuracy score in our model, we're using a balanced accuracy score, which is different. Read here for explanation.  
+    * If you go into the model and change balanced_accuracy_score to accuracy_score (which is a simple calculation of number of correct guesses divided by total guesses), and print the confusion matrix, you'll see that it's returning the correct fraction.
 
 <details><summary>
 Code
@@ -703,7 +709,7 @@ Another topic that we spoke about was an Amazon Lex Bot.
 
 [Stock Data](project_code/maui_stock_data.ipynb)
 
-### _**Model**_
+### _**Models**_
 [Models of Good Fit](test/Code/test_models.ipynb)
 
 [Scikit-learn Classifiers](test/Code/test_supervised.ipynb)
@@ -743,4 +749,9 @@ Another topic that we spoke about was an Amazon Lex Bot.
 * https://docs.scipy.org/doc/numpy/reference/generated/numpy.ravel.html#numpy.ravel
 * https://www.scikit-yb.org/en/latest/api/classifier/classification_report.html
 * https://www.npr.org/sections/health-shots/2020/04/15/834497497/antibody-tests-for-coronavirus-can-miss-the-mark
-
+* https://ipywidgets.readthedocs.io/en/latest/
+* https://github.com/YuChenAmberLu/Options-Calculator/blob/master/Options%20Calculator%20with%20Black%20Scholes%20model.ipynb
+* https://clinthoward.github.io/portfolio/2017/04/16/BlackScholesGreeks/
+* https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52
+* https://towardsdatascience.com/how-to-build-a-time-series-dashboard-in-python-with-panel-altair-and-a-jupyter-notebook-c0ed40f02289
+* https://github.com/holoviz/panel
