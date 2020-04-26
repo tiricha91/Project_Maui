@@ -595,7 +595,10 @@ Jupyter Lab, Jupyter Notebook, Visual Studio Code
 * [Panel](https://panel.holoviz.org/) 
 
 ## Future Steps
-* Our group has been working on several solutions to incorporate _**Buy, Sell and Hold**_ feature into the master function widget. 
+
+We are working on the following three features to upgrade our machine learning widget. 
+
+Our group has been working on several solutions to incorporate _**Buy, Sell and Hold**_ feature into the master function widget. 
 
 <details><summary>
 The original code appears as follows:
