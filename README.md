@@ -198,8 +198,11 @@ As of models, we used _**Logit regression**_ and _**Balanced Random Forest Class
 Other models used include _**LSTM Sequential**_ and _**3-Layer Neural Network**_.
 
 ### _**Python Libraries**:_
+_Data for News Sentiments_
 
-_For Logit and Balanced Random Forest Models:_
+[NLTK](https://www.nltk.org/)
+
+_Logit, Balanced Random Forest and Miscellaneous Classifiers:_
 
 [scikit-learn](https://scikit-learn.org/stable/)
 
@@ -410,7 +413,15 @@ print(classification_report(y_test, lm_pred))
 
 ### _**Logit**_
 
+![Logit Predictions on 1-Day Rolling Window](project_code/Images/dis_logit_1d.png)
+
+<details><summary>
+Logit predictions without rolling window
+</summary>
+
 ![Logit Predictions](project_code/Images/logit_prediction.png)
+
+</details>
 
 ### _**Balanced Random Forest**_
 <details><summary>
@@ -427,7 +438,7 @@ Graph
 Graph
 </summary>
 
-![Balanced Random Forest Predictions](project_code/Images/nn_prediction.png)
+![3-Layer Neural Network Predictions](project_code/Images/nn_prediction.png)
 
 </details>
 
@@ -758,3 +769,4 @@ Another topic that we spoke about was an Amazon Lex Bot.
 * https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52
 * https://towardsdatascience.com/how-to-build-a-time-series-dashboard-in-python-with-panel-altair-and-a-jupyter-notebook-c0ed40f02289
 * https://github.com/holoviz/panel
+* https://www.nltk.org/
