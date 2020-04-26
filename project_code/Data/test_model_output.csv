@@ -1,0 +1,9 @@
+Company,Last Close,Estimated Price,% Change,Composite,Chance
+Google,100,110,0.1,0.9,0.99
+Facebook,100,105,0.05,0.75,0.99
+Apple,100,101,0.01,0.5,0.99
+eBay,100,100,0,0.4,0.99
+Microsoft,100,99,-0.01,0.3,0.99
+Uber,100,95,-0.05,0.2,0.99
+Amazon,100,90,-0.1,0.05,0.99
+UnsureCo.,100,150,0.5,0.11,0.7
